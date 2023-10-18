@@ -44,7 +44,7 @@ final class ToDoViewController: UIViewController, UISearchBarDelegate {
         viewCont.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
 
         textField.delegate = self
-        textField.placeholder = "Add new to do"
+        textField.placeholder = Resources.Strings.Main.Add
         textField.font = UIFont.boldSystemFont(ofSize: 24)
         textField.borderStyle = .roundedRect
         textField.returnKeyType = .done
