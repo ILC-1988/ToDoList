@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ToDoItemCell.configure(with:):ToDoItemCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cartItem.toDo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ToDoViewController.textFieldShouldReturn(_:):ToDoViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textField.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in variable initialization expression of ToDoItemCell.nameLabel:ToDoItemCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "label.font">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ToDoViewModel.tableView(_:cellForRowAt:):ToDoViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "toDoItems">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
