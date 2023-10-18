@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  ToDoList
+
+  Created by Илья Черницкий on 18.10.23.
+  
+*/
+// Main
+"Main.Add" = "Добавить новое дело";

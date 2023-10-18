@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		617C62162AE0542C004A0DE3 /* ToDoViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617C62152AE0542C004A0DE3 /* ToDoViewController+Extension.swift */; };
 		617C62192AE054D3004A0DE3 /* ToDoViewModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617C62182AE054D3004A0DE3 /* ToDoViewModel+Extension.swift */; };
+		617C621E2AE05F89004A0DE3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 617C62202AE05F89004A0DE3 /* Localizable.strings */; };
+		617C62232AE06041004A0DE3 /* Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617C62222AE06041004A0DE3 /* Localisation.swift */; };
+		617C62252AE0609D004A0DE3 /* Strings+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617C62242AE0609D004A0DE3 /* Strings+Extension.swift */; };
 		61E14F942ADEF9FC0006FA3F /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E14F932ADEF9FC0006FA3F /* ToDoViewModel.swift */; };
 		61E14F9A2ADF044D0006FA3F /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E14F992ADF044D0006FA3F /* UserSessionManager.swift */; };
 		61E14F9C2ADF0C050006FA3F /* ToDoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E14F9B2ADF0C050006FA3F /* ToDoItemCell.swift */; };
@@ -23,6 +26,11 @@
 /* Begin PBXFileReference section */
 		617C62152AE0542C004A0DE3 /* ToDoViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoViewController+Extension.swift"; sourceTree = "<group>"; };
 		617C62182AE054D3004A0DE3 /* ToDoViewModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoViewModel+Extension.swift"; sourceTree = "<group>"; };
+		617C621B2AE05F17004A0DE3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		617C621F2AE05F89004A0DE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		617C62212AE05F8B004A0DE3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		617C62222AE06041004A0DE3 /* Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localisation.swift; sourceTree = "<group>"; };
+		617C62242AE0609D004A0DE3 /* Strings+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Extension.swift"; sourceTree = "<group>"; };
 		61E14F932ADEF9FC0006FA3F /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
 		61E14F992ADF044D0006FA3F /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
 		61E14F9B2ADF0C050006FA3F /* ToDoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemCell.swift; sourceTree = "<group>"; };
@@ -55,6 +63,7 @@
 			children = (
 				617C62152AE0542C004A0DE3 /* ToDoViewController+Extension.swift */,
 				617C62182AE054D3004A0DE3 /* ToDoViewModel+Extension.swift */,
+				617C62242AE0609D004A0DE3 /* Strings+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -67,6 +76,15 @@
 				61E14F9B2ADF0C050006FA3F /* ToDoItemCell.swift */,
 			);
 			path = ToDo;
+			sourceTree = "<group>";
+		};
+		617C621A2AE05EBC004A0DE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				617C62222AE06041004A0DE3 /* Localisation.swift */,
+				617C62202AE05F89004A0DE3 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		61FB45DA2ADDCBF300B510E8 = {
@@ -95,6 +113,7 @@
 				61E14F992ADF044D0006FA3F /* UserSessionManager.swift */,
 				617C62172AE0548F004A0DE3 /* ToDo */,
 				617C62142AE05400004A0DE3 /* Extensions */,
+				617C621A2AE05EBC004A0DE3 /* Resources */,
 				61FB45EF2ADDCBF500B510E8 /* Assets.xcassets */,
 				61FB45F12ADDCBF500B510E8 /* LaunchScreen.storyboard */,
 				61FB45F42ADDCBF500B510E8 /* Info.plist */,
@@ -108,7 +127,6 @@
 				E51526AE447FD23AB7586210 /* Pods-ToDoList.debug.xcconfig */,
 				8340A2D9FC4241BCE90F2848 /* Pods-ToDoList.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,6 +149,7 @@
 				61FB45DF2ADDCBF300B510E8 /* Sources */,
 				61FB45E02ADDCBF300B510E8 /* Frameworks */,
 				61FB45E12ADDCBF300B510E8 /* Resources */,
+				617C62262AE063D6004A0DE3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -163,6 +182,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 61FB45DA2ADDCBF300B510E8;
 			productRefGroup = 61FB45E42ADDCBF300B510E8 /* Products */;
@@ -180,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61FB45F32ADDCBF500B510E8 /* LaunchScreen.storyboard in Resources */,
+				617C621E2AE05F89004A0DE3 /* Localizable.strings in Resources */,
 				61FB45F02ADDCBF500B510E8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +230,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		617C62262AE063D6004A0DE3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SWIFT_LINT=/usr/local/bin/swiftlint\nif [[ -e \"${SWIFT_LINT}\" ]]; then\necho \"[I] Found SwiftLint at ${SWIFT_LINT}\"\nelse\necho \"[!] Local SwiftLint not found at ${SWIFT_LINT}\"\nexport SWIFT_LINT=${PWD}/Pods/SwiftLint/swiftlint\necho \"[I] Try to using SwiftLint from cocoapods at ${SWIFT_LINT}\"\nfi\nif [[ ! -e \"${SWIFT_LINT}\" ]]; then\necho \"[!] SwifLint is not installed.\"\necho \"[!] Expected location is '${SWIFT_LINT}'\"\necho \"[!] Please install it. eg. 'brew install swiftlint'\"\nexit 1\nfi\necho \"[I] SwiftLint version: $(${SWIFT_LINT} version)\"\ngit ls-files --other --modified --exclude-standard -- \"*.swift\" | while read filename; do\n$SWIFT_LINT lint \"$filename\";\n$SWIFT_LINT autocorrect \"$filename\";\ndone\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -216,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				617C62252AE0609D004A0DE3 /* Strings+Extension.swift in Sources */,
 				61E14F942ADEF9FC0006FA3F /* ToDoViewModel.swift in Sources */,
 				61E14F9A2ADF044D0006FA3F /* UserSessionManager.swift in Sources */,
 				617C62192AE054D3004A0DE3 /* ToDoViewModel+Extension.swift in Sources */,
@@ -224,16 +263,27 @@
 				617C62162AE0542C004A0DE3 /* ToDoViewController+Extension.swift in Sources */,
 				61FB45E72ADDCBF300B510E8 /* AppDelegate.swift in Sources */,
 				61FB45E92ADDCBF300B510E8 /* SceneDelegate.swift in Sources */,
+				617C62232AE06041004A0DE3 /* Localisation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		617C62202AE05F89004A0DE3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				617C621F2AE05F89004A0DE3 /* en */,
+				617C62212AE05F8B004A0DE3 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		61FB45F12ADDCBF500B510E8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				61FB45F22ADDCBF500B510E8 /* Base */,
+				617C621B2AE05F17004A0DE3 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -246,6 +296,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -309,6 +360,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
