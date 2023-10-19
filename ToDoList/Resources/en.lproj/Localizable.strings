@@ -7,4 +7,5 @@
 */
 // Main
 "Main.Add" = "Add new to do";
+"Main.AddButton" = "Add";
 "Main.Completed" = "(Completed)";
