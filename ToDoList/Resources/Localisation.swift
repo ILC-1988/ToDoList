@@ -11,6 +11,7 @@ struct Resources {
     struct Strings {
         struct Main {
             static let Add: String = "Main.Add".localized
+            static let Completed: String = "Main.Completed".localized
         }
     }
 }

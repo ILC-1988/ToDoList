@@ -33,6 +33,6 @@ struct ToDoData: Codable {
 }
 
 struct UserData: Codable {
-    let toDo: String
-    let date: Date
+    var toDo: String
+    var date: Date
 }

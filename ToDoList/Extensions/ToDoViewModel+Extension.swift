@@ -43,4 +43,9 @@ extension ToDoViewModel: UITableViewDelegate {
             tableView.reloadData()
         }
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        toDoItems[indexPath.row].toDo = Resources.Strings.Main.Completed
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
 }
