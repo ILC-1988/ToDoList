@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To do list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNR-uE-zxN">
-                                <rect key="frame" x="110.00000000000001" y="396.66666666666669" width="173.33333333333337" height="59"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To-do list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNR-uE-zxN">
+                                <rect key="frame" x="108.66666666666667" y="396.66666666666669" width="175.66666666666663" height="59"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="42"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -28,14 +28,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="i1z-iH-dIy">
+                                <rect key="frame" x="131.66666666666666" y="788" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="sNR-uE-zxN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="WK0-z7-ndn"/>
+                            <constraint firstItem="ogK-Tp-feO" firstAttribute="leading" secondItem="i1z-iH-dIy" secondAttribute="trailing" constant="8" id="WfV-Un-HiN"/>
                             <constraint firstItem="ogK-Tp-feO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XLH-cN-6aT"/>
+                            <constraint firstItem="i1z-iH-dIy" firstAttribute="height" secondItem="ogK-Tp-feO" secondAttribute="height" multiplier="0.833333" id="ZDQ-kX-Yym"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ogK-Tp-feO" secondAttribute="bottom" constant="8" id="dlb-bc-7eZ"/>
                             <constraint firstItem="sNR-uE-zxN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qvE-wm-L27"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i1z-iH-dIy" secondAttribute="bottom" constant="10" id="wDD-s9-qox"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -46,7 +52,7 @@
     </scenes>
     <resources>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

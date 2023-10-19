@@ -40,7 +40,7 @@ final class ToDoViewController: UIViewController, UISearchBarDelegate {
 
     func setupUI() {
         view.addSubview(viewCont)
-        view.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
         viewCont.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
 
         textField.delegate = self

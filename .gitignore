@@ -85,8 +85,13 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-# End of https://www.toptal.com/developers/gitignore/api/swift
-
 # Xcode user-specific files
 *.xcuserstate
 xcuserdata/
+
+xcuserdata/
+temp.txt
+*.tmp
+
+
+# End of https://www.toptal.com/developers/gitignore/api/swift

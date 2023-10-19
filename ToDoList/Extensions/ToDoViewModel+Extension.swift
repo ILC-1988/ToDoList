@@ -10,13 +10,13 @@ import UIKit
 // MARK: UITableViewDataSource
 extension ToDoViewModel: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return toDoItems.count
+        return toDoList.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoItemCell", for: indexPath)
         if let cell = cell as? ToDoItemCell {
-            let cartItem = toDoItems[indexPath.row]
+            let cartItem = toDoList[indexPath.row]
             cell.configure(with: cartItem)
         }
         return cell
@@ -37,10 +37,18 @@ extension ToDoViewModel: UITableViewDelegate {
                    commit editingStyle: UITableViewCell.EditingStyle,
                    forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            toDoItems.remove(at: indexPath.row)
+            toDoList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-            UserSessionManager.shared.saveToDoList(toDoItems)
+            UserSessionManager.shared.saveToDoList(toDoList)
             tableView.reloadData()
         }
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        toDoList[indexPath.row].toDo = Resources.Strings.Main.Completed
+        let currentDate = Date()
+        toDoList[indexPath.row].date = currentDate
+        UserSessionManager.shared.saveToDoList(toDoList)
+        tableView.reloadRows(at: [indexPath], with: .automatic)
     }
 }

@@ -8,9 +8,9 @@
 import UIKit
 
 final class ToDoViewModel: NSObject {
-    var toDoItems: [UserData] = []
+    var toDoList: [UserData] = []
 
     func fetchToDoItems() {
-        toDoItems = UserSessionManager.shared.loadToDoList() ?? []
+        toDoList = UserSessionManager.shared.loadToDoList() ?? []
     }
 }

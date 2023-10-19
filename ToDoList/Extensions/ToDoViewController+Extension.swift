@@ -22,9 +22,9 @@ extension ToDoViewController: UITextFieldDelegate {
         }
         let currentDate = Date()
         let userData = UserData(toDo: itemText, date: currentDate)
-        viewModel.toDoItems.append(userData)
-        UserSessionManager.shared.saveToDoList(viewModel.toDoItems)
-        let indexPath = IndexPath(row: viewModel.toDoItems.count - 1, section: 0)
+        viewModel.toDoList.append(userData)
+        UserSessionManager.shared.saveToDoList(viewModel.toDoList)
+        let indexPath = IndexPath(row: viewModel.toDoList.count - 1, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
     }
 }
