@@ -58,7 +58,7 @@ final class ToDoItemCell: UITableViewCell {
             dateLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             dateLabel.leadingAnchor.constraint(equalTo: nameLabel.trailingAnchor),
             dateLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            dateLabel.widthAnchor.constraint(equalToConstant: 100),
+            dateLabel.widthAnchor.constraint(equalToConstant: 120),
         ])
     }
 
