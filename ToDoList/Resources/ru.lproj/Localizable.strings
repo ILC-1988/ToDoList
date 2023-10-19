@@ -7,4 +7,5 @@
 */
 // Main
 "Main.Add" = "Добавить новое дело";
+"Main.AddButton" = "Добавить";
 "Main.Completed" = "(Выполнено)";
