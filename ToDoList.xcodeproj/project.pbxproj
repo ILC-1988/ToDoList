@@ -12,6 +12,7 @@
 		617C621E2AE05F89004A0DE3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 617C62202AE05F89004A0DE3 /* Localizable.strings */; };
 		617C62232AE06041004A0DE3 /* Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617C62222AE06041004A0DE3 /* Localisation.swift */; };
 		617C62252AE0609D004A0DE3 /* Strings+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617C62242AE0609D004A0DE3 /* Strings+Extension.swift */; };
+		61B53C122AE1BC8C0028C53B /* swift.gitignore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 61B53C112AE1BC8C0028C53B /* swift.gitignore.txt */; };
 		61E14F942ADEF9FC0006FA3F /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E14F932ADEF9FC0006FA3F /* ToDoViewModel.swift */; };
 		61E14F9A2ADF044D0006FA3F /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E14F992ADF044D0006FA3F /* UserSessionManager.swift */; };
 		61E14F9C2ADF0C050006FA3F /* ToDoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E14F9B2ADF0C050006FA3F /* ToDoItemCell.swift */; };
@@ -31,6 +32,7 @@
 		617C62212AE05F8B004A0DE3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		617C62222AE06041004A0DE3 /* Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localisation.swift; sourceTree = "<group>"; };
 		617C62242AE0609D004A0DE3 /* Strings+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Extension.swift"; sourceTree = "<group>"; };
+		61B53C112AE1BC8C0028C53B /* swift.gitignore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swift.gitignore.txt; sourceTree = "<group>"; };
 		61E14F932ADEF9FC0006FA3F /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
 		61E14F992ADF044D0006FA3F /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
 		61E14F9B2ADF0C050006FA3F /* ToDoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemCell.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		61FB45DA2ADDCBF300B510E8 = {
 			isa = PBXGroup;
 			children = (
+				61B53C112AE1BC8C0028C53B /* swift.gitignore.txt */,
 				61FB45E52ADDCBF300B510E8 /* ToDoList */,
 				61FB45E42ADDCBF300B510E8 /* Products */,
 				650E0FE2C0121C18E4CB4127 /* Pods */,
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B53C122AE1BC8C0028C53B /* swift.gitignore.txt in Resources */,
 				61FB45F32ADDCBF500B510E8 /* LaunchScreen.storyboard in Resources */,
 				617C621E2AE05F89004A0DE3 /* Localizable.strings in Resources */,
 				61FB45F02ADDCBF500B510E8 /* Assets.xcassets in Resources */,
