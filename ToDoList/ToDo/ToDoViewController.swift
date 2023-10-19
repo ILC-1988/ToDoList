@@ -11,6 +11,8 @@ final class ToDoViewController: UIViewController, UISearchBarDelegate {
 
     lazy var tableView = UITableView()
     var viewModel = ToDoViewModel()
+    let backgroundColor = #colorLiteral(red: 0.7090554476, green: 0.6616386168, blue: 1, alpha: 1)
+    let cornerRadius = 10
     lazy var viewContainer = UIView()
     lazy var textField = UITextField()
     lazy var button = UIButton()
@@ -41,18 +43,21 @@ final class ToDoViewController: UIViewController, UISearchBarDelegate {
 
     func setupUI() {
         view.addSubview(viewContainer)
-        view.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
-        viewContainer.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        view.backgroundColor = backgroundColor
+        viewContainer.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
 
         textField.delegate = self
         textField.placeholder = Resources.Strings.Main.Add
-        textField.font = UIFont.boldSystemFont(ofSize: 24)
         textField.borderStyle = .roundedRect
         textField.returnKeyType = .done
+        textField.layer.cornerRadius = CGFloat(cornerRadius)
         viewContainer.addSubview(textField)
 
         button.setTitle(Resources.Strings.Main.AddButton, for: .normal)
-        button.layer.cornerRadius = 5
+        button.layer.cornerRadius = CGFloat(cornerRadius)
+        button.backgroundColor = backgroundColor
+        let coller = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        button.setTitleColor(coller, for: .normal)
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
 
         viewContainer.addSubview(button)
@@ -62,6 +67,7 @@ final class ToDoViewController: UIViewController, UISearchBarDelegate {
         tableView.delegate = viewModel
         tableView.separatorColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
         tableView.separatorStyle = .singleLine
+        tableView.layer.cornerRadius = CGFloat(cornerRadius)
         tableView.register(ToDoItemCell.self, forCellReuseIdentifier: "ToDoItemCell")
         viewContainer.addSubview(tableView)
     }
