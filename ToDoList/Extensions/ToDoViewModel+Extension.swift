@@ -45,7 +45,7 @@ extension ToDoViewModel: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        toDoList[indexPath.row].toDo = Resources.Strings.Main.Completed
+        toDoList[indexPath.row].toDo = Resources.Strings.Main.Completed + " " + toDoList[indexPath.row].toDo
         let currentDate = Date()
         toDoList[indexPath.row].date = currentDate
         UserSessionManager.shared.saveToDoList(toDoList)
