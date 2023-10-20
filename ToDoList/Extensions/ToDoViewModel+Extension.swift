@@ -45,10 +45,14 @@ extension ToDoViewModel: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        toDoList[indexPath.row].toDo = Resources.Strings.Main.Completed + " " + toDoList[indexPath.row].toDo
-        let currentDate = Date()
-        toDoList[indexPath.row].date = currentDate
-        UserSessionManager.shared.saveToDoList(toDoList)
-        tableView.reloadRows(at: [indexPath], with: .automatic)
+        let toDo = toDoList[indexPath.row].toDo
+        let completed = Resources.Strings.Main.Completed
+        if !toDo.contains(completed) {
+            toDoList[indexPath.row].toDo = completed + " " + toDo
+            let currentDate = Date()
+            toDoList[indexPath.row].date = currentDate
+            UserSessionManager.shared.saveToDoList(toDoList)
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+        }
     }
 }
